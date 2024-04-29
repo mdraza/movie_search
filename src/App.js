@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import StarRating from "./StarRating";
 
 const average = (arr) =>
-  arr.reduce((acc, cur, arr) => acc + cur / arr.length, 0);
+  arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
 const KEY = "e35089e1";
 
